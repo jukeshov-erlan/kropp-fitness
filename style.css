@@ -258,3 +258,57 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: var(--color-light);
+}
+
+a:hover {
+  color: var(--color-light-gray);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header-logo {
+  width: 135px;
+  height: 25px;
+}
+
+.header-menu-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header-menu-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 7px;
+  height: 90px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+.header-menu-link.is-current::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
