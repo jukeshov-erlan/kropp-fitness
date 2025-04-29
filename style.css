@@ -602,6 +602,12 @@ p:not([class]):last-child {
   }
 }
 
+@media (max-width: 1280px) {
+  .training-types-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .header,
   .banner {
@@ -675,5 +681,19 @@ p:not([class]):last-child {
 
   .motivation-card-img {
     min-width: 60%;
+  }
+
+  .training-types-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .training-types-item {
+  --trainingTypesItemBgIconSize: 50px;
+  row-gap: 10px;
+  }
+
+  .training-types-img {
+    max-width: 120px;
   }
 }
