@@ -291,7 +291,7 @@ h6 {
 .backdrop-title.centered::after {
   top: -0.55em;
   left: 50%;
-  translate: -50% 0; 
+  translate: -50% 0;
 }
 
 .backdrop-title::before {
@@ -621,8 +621,8 @@ p:not([class]):last-child {
   align-items: center;
   row-gap: 32px;
   padding-top: var(--trainingTypesItemBgIconSize);
-  background: url('./icons/arrow-bottom-left.svg') 100% 0/var(--trainingTypesItemBgIconSize) no-repeat;
-
+  background: url("./icons/arrow-bottom-left.svg") 100% 0 /
+    var(--trainingTypesItemBgIconSize) no-repeat;
 }
 
 .training-type-item-title {
@@ -636,7 +636,14 @@ p:not([class]):last-child {
   justify-content: center;
   align-items: center;
   padding: 150px 30px;
-  background: url('./images/join-us-bg.jpg') center/cover no-repeat var(--color-dark-alternate);
+  background: url("./images/join-us-bg.jpg") center/cover no-repeat
+    var(--color-dark-alternate);
+}
+
+.join-us-video {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
 }
 
 .join-us-video-play-button {
@@ -671,10 +678,10 @@ p:not([class]):last-child {
 }
 
 .join-us-video-play-button::after {
-  content: '';
+  content: "";
   width: 26px;
   aspect-ratio: 1;
-  background: url('./icons/arrow-top-right.svg') center/contain no-repeat;
+  background: url("./icons/arrow-top-right.svg") center/contain no-repeat;
   transition-duration: var(--transition-duration);
 }
 
@@ -691,12 +698,12 @@ p:not([class]):last-child {
 }
 
 .join-us-title::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 0.7em;
   aspect-ratio: 1;
   margin-left: 0.14em;
-  background: url('./icons/arrow-bottom-right.svg') center/contain no-repeat;
+  background: url("./icons/arrow-bottom-right.svg") center/contain no-repeat;
   scale: 1 -1;
   transition-duration: var(--transition-duration);
 }
@@ -711,7 +718,7 @@ p:not([class]):last-child {
 
 .join-us-form-header {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   align-items: center;
   row-gap: 7px;
 }
@@ -784,6 +791,14 @@ p:not([class]):last-child {
     height: auto;
     margin-block: 0;
   }
+
+  .join-us-body {
+    padding-bottom: 80px;
+  }
+
+  .join-us-title:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -832,11 +847,30 @@ p:not([class]):last-child {
   }
 
   .training-types-item {
-  --trainingTypesItemBgIconSize: 50px;
-  row-gap: 10px;
+    --trainingTypesItemBgIconSize: 50px;
+    row-gap: 10px;
   }
 
   .training-types-img {
     max-width: 120px;
+  }
+
+  .join-us-video-play-button {
+    width: 150px;
+  }
+
+  .join-us-title:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .join-us-form-subtitle {
+    font-size: 16px;
+  }
+
+  .join-us-form-body {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 20px;
   }
 }
