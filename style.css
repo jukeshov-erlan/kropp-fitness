@@ -255,7 +255,6 @@ body {
   margin-inline: auto;
 }
 
-
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -297,7 +296,6 @@ h6 {
   text-align: center;
   color: var(--color-light);
 }
-
 
 .backdrop-title {
   position: relative;
@@ -346,12 +344,12 @@ h6 {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type=number]{
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .input::placeholder,
@@ -666,7 +664,7 @@ p:not([class]):last-child {
   align-items: center;
   padding: 150px 30px;
   background: url("./images/join-us-bg.jpg") center/cover no-repeat;
-  color:  var(--color-dark-alternate);
+  color: var(--color-dark-alternate);
 }
 
 .join-us-video {
@@ -810,7 +808,6 @@ p:not([class]):last-child {
   padding-bottom: 62px;
 }
 
-
 .family-body {
   display: flex;
   justify-content: center;
@@ -873,7 +870,7 @@ p:not([class]):last-child {
 }
 
 .calculate-table-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -898,7 +895,6 @@ p:not([class]):last-child {
   border-left: 1px solid var(--color-light-gray);
 }
 
-
 .calculate-table th {
   padding-block: 20px;
   text-align: left;
@@ -919,7 +915,7 @@ p:not([class]):last-child {
 }
 
 .calculate-table tbody tr:last-child td:first-child::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -998,6 +994,30 @@ p:not([class]):last-child {
 
   .family-img {
     height: 360px;
+  }
+
+  .calculate {
+    padding-block: 120px;
+  }
+
+  .calculate-inner {
+    column-gap: 20px;
+  }
+
+  .calculate-form-body {
+    grid-template-columns: 1fr;
+  }
+
+  .calculate-button {
+    width: 100%;
+  }
+
+  .calculate-table :is(td, th) {
+    padding: block 10px;
+  }
+
+  .calculate-table tfoot td {
+    padding: top 10px;
   }
 }
 
@@ -1095,4 +1115,16 @@ p:not([class]):last-child {
     height: 180px;
   }
 
+  .calculate {
+    padding-block: 60px;
+  }
+
+  .calculate-inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .calculate-table-wrapper::before {
+    display: none;
+  }
 }
