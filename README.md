@@ -1,25 +1,30 @@
 # Kropp Fitness
 
-Kropp Fitness — это современный адаптивный лендинг для фитнес-центра. Проект разработан с акцентом на чистый дизайн, удобство навигации и мобильную адаптацию.
+Kropp Fitness is a modern responsive landing page for a fitness center. The project is built with a focus on clean design, easy navigation, and mobile adaptability.
 
-## 🚀 Технологии
+##Technologies
+HTML5
 
-- HTML5
-- CSS Grid, Flexbox
-- Адаптивная вёрстка
+CSS Grid, Flexbox
 
-## 💡 Возможности
+Responsive layout
 
-- Чистая и понятная структура кода
-- Гибкая сетка для расположения элементов
-- Семантическая вёрстка
-- Поддержка всех популярных браузеров
-- Отправка email
+##Features
+Clean and readable code structure
 
-## 📱 Адаптация
+Flexible grid for element placement
 
-Сайт корректно отображается на:
+Semantic HTML markup
 
-- 📱 Мобильных устройствах
-- 💻 Планшетах
-- 🖥️ Десктопах
+Cross-browser compatibility
+
+Email sending functionality
+
+##Responsiveness
+The site displays correctly on:
+
+📱 Mobile devices
+
+💻 Tablets
+
+🖥️ Desktops
